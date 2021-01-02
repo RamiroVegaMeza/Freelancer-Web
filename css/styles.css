@@ -1,0 +1,16 @@
+html{
+font-size: 62.5%;
+}
+
+body{
+font-size: 1.6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem; /* 1 rem= 10 ´px*/
+}
+
+span{
+    font-size: 2rem;;
+}
