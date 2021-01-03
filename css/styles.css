@@ -33,6 +33,11 @@ body{
     background-color: var(--secundario);
 }
 
-.navegacion-principal a{
-    background-color: var(--primario);    
+.navegacion-principal {
+    padding: 1rem;    
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
 }
