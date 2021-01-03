@@ -1,2 +1,2 @@
 # Freelancer-Web
-pagina basica proyecto 1
+pagina basica diseño minimalista
