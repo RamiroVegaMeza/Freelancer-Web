@@ -25,7 +25,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 
 }
@@ -33,13 +33,25 @@ body{
     background-color: var(--secundario);
 }
 
-.navegacion-principal {
-    padding: 1rem;    
+.navegacion-principal {    
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color:var(--oscuro);
 }
