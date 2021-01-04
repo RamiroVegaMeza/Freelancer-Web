@@ -5,14 +5,15 @@
     --secundario: #0087a7;
     --gris: #757575;
 }
-
+/* Globales */
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+
+*, *:before, *:after { 
+    box-sizing: inherit;/*hack para box model  */              
   }
 
 body{
@@ -34,7 +35,7 @@ h3{
 h1,h2,h3{
     text-align: 2rem;
 }
-
+/* Titulos */
 .titulo{
     text-align: center;
     font-size: 3.8rem;
@@ -52,7 +53,7 @@ h1,h2,h3{
 .nav-bg{
     background-color: var(--secundario);
 }
-
+/* Navegacion Principal */
 .navegacion-principal {    
     display: flex;
     flex-direction: column;
@@ -78,6 +79,7 @@ h1,h2,h3{
     background-color: var(--primario);
     color:var(--oscuro);
 }
+/* Hero */
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
