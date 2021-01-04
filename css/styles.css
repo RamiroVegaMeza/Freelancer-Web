@@ -18,11 +18,14 @@ html{
   }
 
 body{
-    font-size: 1.6rem; /* 1rem =10px*/
+    font-size: 16px; /* 1rem =10px*/
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top,var(--grisClaro) 0%,var(--blanco) 100%);
 }
-
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
 .sombra{
 box-shadow: 0px 5px 6px 0px rgba(89,86,89,0.54);
 background-color: var(--blanco);
@@ -45,6 +48,30 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 480px){
+ .boton{
+     width: auto;
+ }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
 /* Titulos */
 .titulo{
     text-align: center;
@@ -54,16 +81,26 @@ h1,h2,h3{
 .titulo span{
     font-size: 2rem;
 }
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-    
-
+/* Utilidades */
+.w-100{
+    width: 100%;
 }
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+@media (min-width: 700px){
+ .w-100{
+     width: auto;
+ }
+}
+
+/* Navegacion Principal */
 .nav-bg{
     background-color: var(--secundario);
 }
-/* Navegacion Principal */
 .navegacion-principal {    
     display: flex;
     flex-direction: column;
@@ -122,24 +159,6 @@ h1,h2,h3{
     align-items: flex-end;
 }
 
-.boton{
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
-}
-@media (min-width: 480px){
- .boton{
-     width: auto;
- }
-}
 /* Servicios */
 @media (min-width: 768px ){
     .servicios{
@@ -187,4 +206,28 @@ h1,h2,h3{
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primario);
+}
+
+.contenedor-campo{
+
+}
+.campo{
+
+}
+.campo label{
+    color:var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display:block;
+}
+
+.input-text{
+    width: 100%;
+    border:none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton{
+    width: 100%;
 }
