@@ -1,2 +1,2 @@
 # Freelancer-Web
-pagina basica diseño minimalista
+https://ramiroproyecto01.netlify.app/
